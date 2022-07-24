@@ -13,17 +13,17 @@ type
   { TForm1 }
 
   TForm1 = class(TForm)
-      TLC254: TLabel;
-    tb_hostname: TEdit;
-    Edit2: TEdit;
-    Edit3: TEdit;
-    Label1: TLabel;
-    ListBox1: TListBox;
-    Memo1: TMemo;
-    SpinEdit1: TSpinEdit;
+      tb_username: TLabeledEdit;
+      tb_password: TLabeledEdit;
+    la_serverInfo: TLabel;
+    TLC254: TLabel;
+    lbox_serverInfo: TListBox;
+    rtb_log: TMemo;
+    tb_port: TLabeledEdit;
+    tb_hostname: TLabeledEdit;
     Timer1: TTimer;
     procedure FormCreate(Sender: TObject);
-    procedure Memo1KeyPress(Sender: TObject; var Key: char);
+    procedure rtb_logKeyPress(Sender: TObject; var Key: char);
     procedure Timer1Timer(Sender: TObject);
   private
 
@@ -43,18 +43,19 @@ implementation
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-  sshClient := TSSH_Client.Create(Form1.Memo1);
+  sshClient := TSSH_Client.Create(rtb_log);
   sshClient.SetHostName(tb_hostname.Text);
-  sshClient.SetUserName(Edit2.Text);
-  sshClient.SetPassword(Edit3.Text);
+  sshClient.SetUserName(tb_username.Text);
+  sshClient.SetPassword(tb_password.Text);
+  sshClient.SetPort(StrToInt(tb_port.Text));
 end;
 
-procedure TForm1.Memo1KeyPress(Sender: TObject; var Key: char);
+procedure TForm1.rtb_logKeyPress(Sender: TObject; var Key: char);
 begin
   with Sender as TMemo do
   case Key of
     #13: begin
-      sshClient.ssh(Memo1.Lines.ValueFromIndex[Memo1.Lines.Count]);
+      sshClient.ssh(rtb_log.Lines.ValueFromIndex[rtb_log.Lines.Count]);
       Key := #0;
     end;
     else

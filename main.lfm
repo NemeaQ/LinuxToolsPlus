@@ -1,69 +1,35 @@
 object Form1: TForm1
   Left = 1067
   Height = 840
-  Top = 372
+  Top = 163
   Width = 769
+  BorderStyle = bsSingle
   Caption = 'Form1'
   ClientHeight = 840
   ClientWidth = 769
   OnCreate = FormCreate
+  Position = poDesktopCenter
   LCLVersion = '2.2.2.0'
-  object Memo1: TMemo
+  object rtb_log: TMemo
     Left = 8
     Height = 160
     Top = 672
     Width = 752
     Anchors = [akLeft, akRight, akBottom]
-    OnKeyPress = Memo1KeyPress
+    OnKeyPress = rtb_logKeyPress
     ScrollBars = ssAutoVertical
     TabOrder = 0
   end
-  object tb_hostname: TEdit
-    Left = 8
-    Height = 36
-    Top = 632
-    Width = 144
-    Anchors = [akLeft, akBottom]
-    TabOrder = 1
-    Text = '176.53.162.232'
-  end
-  object Edit2: TEdit
-    Left = 160
-    Height = 36
-    Top = 632
-    Width = 144
-    Anchors = [akLeft, akBottom]
-    TabOrder = 2
-    Text = 'root'
-  end
-  object Edit3: TEdit
-    Left = 312
-    Height = 36
-    Top = 632
-    Width = 144
-    Anchors = [akLeft, akBottom]
-    TabOrder = 3
-    Text = 'P@ssw0rd'
-  end
-  object SpinEdit1: TSpinEdit
-    Left = 464
-    Height = 36
-    Top = 632
-    Width = 88
-    Anchors = [akLeft, akBottom]
-    TabOrder = 4
-    Value = 22
-  end
-  object ListBox1: TListBox
+  object lbox_serverInfo: TListBox
     Left = 8
     Height = 224
     Top = 32
     Width = 184
     ItemHeight = 0
-    TabOrder = 5
+    TabOrder = 1
     TopIndex = -1
   end
-  object Label1: TLabel
+  object la_serverInfo: TLabel
     Left = 8
     Height = 19
     Top = 8
@@ -71,12 +37,68 @@ object Form1: TForm1
     Caption = 'Server info:'
     ParentColor = False
   end
+  object tb_hostname: TLabeledEdit
+    Left = 8
+    Height = 36
+    Top = 632
+    Width = 144
+    Anchors = [akLeft, akBottom]
+    EditLabel.Height = 19
+    EditLabel.Width = 144
+    EditLabel.Caption = 'tb_hostname'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+    Text = '176.53.162.232'
+    OnChange = FormCreate
+  end
+  object tb_username: TLabeledEdit
+    Left = 160
+    Height = 36
+    Top = 632
+    Width = 144
+    Anchors = [akLeft, akBottom]
+    EditLabel.Height = 19
+    EditLabel.Width = 144
+    EditLabel.Caption = 'tb_username'
+    EditLabel.ParentColor = False
+    TabOrder = 3
+    Text = 'root'
+    OnChange = FormCreate
+  end
+  object tb_password: TLabeledEdit
+    Left = 312
+    Height = 36
+    Top = 632
+    Width = 144
+    Anchors = [akLeft, akBottom]
+    EditLabel.Height = 19
+    EditLabel.Width = 144
+    EditLabel.Caption = 'tb_password'
+    EditLabel.ParentColor = False
+    TabOrder = 4
+    Text = 'P@ssw0rd'
+    OnChange = FormCreate
+  end
+  object tb_port: TLabeledEdit
+    Left = 464
+    Height = 36
+    Top = 632
+    Width = 88
+    Anchors = [akLeft, akBottom]
+    EditLabel.Height = 19
+    EditLabel.Width = 88
+    EditLabel.Caption = 'tb_port'
+    EditLabel.ParentColor = False
+    TabOrder = 5
+    Text = '22'
+    OnChange = FormCreate
+  end
   object TLC254: TLabel
-    Left = 226
+    Left = 560
     Height = 19
-    Top = 341
-    Width = 49
-    Caption = 'TLC254'
+    Top = 640
+    Width = 34
+    Caption = 'PING'
     ParentColor = False
   end
   object Timer1: TTimer
