@@ -43,7 +43,7 @@ object Form1: TForm1
     Width = 144
     Anchors = [akLeft, akBottom]
     TabOrder = 3
-    Text = 'bbd8JQ9k'
+    Text = 'P@ssw0rd'
   end
   object SpinEdit1: TSpinEdit
     Left = 464

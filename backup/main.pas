@@ -68,7 +68,7 @@ begin
   PingSend := TPINGSend.Create;
   try
     PingSend.Timeout := 750;
-    if PingSend.Ping('lazarus.freepascal.org') = True then
+    if PingSend.Ping('http://thaddy.com') = True then
     begin
       TLC254.Font.Color := $00AA00;
       TLC254.Caption := 'Reply from in: ' + IntToStr(PingSend.PingTime) + ' ms';

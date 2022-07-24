@@ -16,11 +16,10 @@ uses
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Scaled:=True;
-  Application.Title:='Linux Tools Plus';
+    Application.Scaled:=True;
+    Application.Title:='Linux Tools Plus';
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.Run;
-  Application.Free;
 end.
 
