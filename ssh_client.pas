@@ -5,7 +5,14 @@ unit SSH_Client;
 interface
 
 uses
-  Classes, SysUtils, BaseUnix, StdCtrls, resolve, netdb, libssh2, Sockets;
+  Classes, SysUtils, StdCtrls, resolve, libssh2, Sockets, ctypes,
+  {$IFDEF UNIX}
+
+  {$ENDIF}
+  {$IFDEF WINDOWS}
+  Windows
+  {$ENDIF}
+  ;
 
 type
 
@@ -116,7 +123,7 @@ var
 
   SockAddr: TInetSockAddr;
   HostAddr: THostAddr;
-  HostEntry: THostEntry;
+  hostResolver: THostResolver;
   l_socket: cint;
 
   r: integer;
@@ -126,10 +133,10 @@ var
   l_userauth_list: pansichar;
   l_buffer: pansichar;
 
-  l_host: ansistring;
-  l_user: pansichar;
-  l_pass: pansichar;
-  l_port: integer;
+  //l_host: ansistring;
+  //l_user: pansichar;
+  //l_pass: pansichar;
+  //l_port: integer;
 
   o_len: SIZE_T;
   o_type: integer;
@@ -143,13 +150,16 @@ begin
   l_session := nil;
   l_channel := nil;
 
-  l_port := FPort;
+  //l_port := FPort;
 
-  if (ResolveHostByName(FHostName, HostEntry)) then
+  hostResolver := THostResolver.Create(nil);
+
+  if (hostResolver.NameLookup(FHostName)) then
   begin
-    FHostName := NetAddrToStr(HostEntry.Addr);
+    FHostName := HostAddrToStr(hostResolver.Addresses[0]);
   end;
-
+  Log(FHostName);
+  FreeAndNil(hostResolver);
   r := libssh2_init(0);
 
   //**********
@@ -158,7 +168,7 @@ begin
   if l_socket = -1 then
     raise Exception.Create('fpsocket');
   SockAddr.sin_family := AF_INET;
-  SockAddr.sin_Port := htons(l_port);
+  SockAddr.sin_Port := htons(FPort);
   SockAddr.sin_Addr.s_addr := cardinal(HostAddr);
 
   if fpconnect(l_socket, @SockAddr, SizeOf(SockAddr)) <> 0 then
@@ -306,6 +316,11 @@ begin
             begin
               Log(l_buffer2);
               Continue;
+            end
+            else
+            begin
+              Log('Responce read error');
+              Break;
             end;
 
             if (r = 0) then
@@ -343,7 +358,7 @@ begin
     end;
     if (l_socket > 0) then
     begin
-      FpClose(l_socket);
+      //FpClose(l_socket);
     end;
     libssh2_exit();
   end;

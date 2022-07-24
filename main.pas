@@ -1,12 +1,15 @@
 unit main;
 
 {$mode objfpc}{$H+}
+{$IFDEF WIN64}
+{$IMAGEBASE $400000}
+{$ENDIF}
 
 interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  Spin, lcltype, Menus, ExtCtrls, SSH_Client, pingsend, blcksock;
+  lcltype, Menus, ExtCtrls, SSH_Client, pingsend, blcksock;
 
 type
 

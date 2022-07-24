@@ -32,6 +32,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
         <PackageName Value="laz_synapse"/>
       </Item>
       <Item>

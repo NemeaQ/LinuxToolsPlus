@@ -7,9 +7,9 @@
       <Unit>
         <Filename Value="LinuxToolsPlus.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="3" Y="20"/>
-        <UsageCount Value="56"/>
+        <CursorPos X="22" Y="8"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -18,28 +18,30 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos Y="37"/>
-        <UsageCount Value="56"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="9" Y="57"/>
+        <UsageCount Value="64"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="libssh2.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1441"/>
-        <CursorPos X="2" Y="4"/>
-        <UsageCount Value="56"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="4" Y="3"/>
+        <UsageCount Value="64"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="ssh_client.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="SSH_Client"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="221"/>
-        <CursorPos X="16" Y="237"/>
-        <FoldState Value=" T3i9038i"/>
-        <UsageCount Value="52"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="152"/>
+        <CursorPos X="39" Y="166"/>
+        <FoldState Value=" T3iG037g"/>
+        <UsageCount Value="60"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -48,136 +50,194 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="599"/>
         <CursorPos X="15" Y="614"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="../../.lazarus/onlinepackagemanager/packages/synapse40.1/pingsend.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="139"/>
         <CursorPos X="14" Y="148"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/fpc/3.2.2/source/packages/rtl-extra/src/inc/socketsh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="181"/>
+        <CursorPos X="10" Y="192"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/fpc/3.2.2/source/rtl/inc/ctypes.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="69"/>
+        <CursorPos X="3" Y="81"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/lcl/include/wincontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5419"/>
+        <CursorPos Y="5430"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/lcl/include/customedit.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="489"/>
+        <CursorPos Y="501"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/lcl/lclmessageglue.pas"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="101"/>
+        <CursorPos Y="112"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/lcl/interfaces/win32/win32callback.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2761"/>
+        <CursorPos Y="2773"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/lcl/interfaces/win32/win32wsstdctrls.pp"/>
+        <UnitName Value="Win32WSStdCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1547"/>
+        <CursorPos Y="1558"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../lazarus/lcl/include/application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1370"/>
+        <CursorPos Y="1382"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="79" Column="71" TopLine="60"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="311" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="309" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="311" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="309" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="311" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="309" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="311" TopLine="303"/>
+      </Position>
+      <Position>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="309" TopLine="303"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="71" Column="3" TopLine="60"/>
+        <Caret Line="62" TopLine="50"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="97" Column="5" TopLine="66"/>
+        <Caret Line="57" TopLine="50"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="89" Column="5" TopLine="60"/>
+        <Caret Line="66" TopLine="50"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="35" Column="33" TopLine="29"/>
+        <Caret Line="57" Column="9" TopLine="50"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="79" Column="71" TopLine="66"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="314" Column="44" TopLine="302"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="9" Column="65"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="321" Column="22" TopLine="310"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="35" Column="13" TopLine="21"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="322" Column="21" TopLine="315"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="79" Column="71" TopLine="57"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="240" Column="16" TopLine="230"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="35" Column="34" TopLine="20"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="40" Column="64" TopLine="30"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="87" Column="5" TopLine="58"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="223" Column="67" TopLine="217"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="74" Column="16" TopLine="58"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="120" Column="3" TopLine="109"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="70" Column="6" TopLine="58"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="121" Column="3" TopLine="109"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="35" Column="3" TopLine="19"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="132" Column="3" TopLine="121"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="71" Column="20" TopLine="55"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="136" Column="3" TopLine="125"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="79" Column="112" TopLine="55"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="137" Column="3" TopLine="126"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="71" Column="36" TopLine="56"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="136" Column="9" TopLine="130"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="70" Column="36" TopLine="55"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="153" Column="9" TopLine="147"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="69" Column="36" TopLine="54"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="170" Column="35" TopLine="151"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="68" Column="36" TopLine="53"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="167" Column="17" TopLine="151"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="69" Column="36" TopLine="54"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="159" Column="22" TopLine="156"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="68" Column="36" TopLine="53"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="170" Column="35" TopLine="157"/>
       </Position>
       <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="69" Column="36" TopLine="54"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="68" Column="36" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="69" Column="36" TopLine="54"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="68" Column="36" TopLine="53"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="44" Column="6" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="73" Column="7" TopLine="55"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="77" Column="12" TopLine="35"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="46" Column="35" TopLine="30"/>
+        <Filename Value="ssh_client.pas"/>
+        <Caret Line="166" Column="9" TopLine="162"/>
       </Position>
     </JumpHistory>
     <RunParams>
