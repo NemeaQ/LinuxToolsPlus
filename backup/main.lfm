@@ -1,0 +1,87 @@
+object Form1: TForm1
+  Left = 1089
+  Height = 840
+  Top = 124
+  Width = 769
+  Caption = 'Form1'
+  ClientHeight = 840
+  ClientWidth = 769
+  OnCreate = FormCreate
+  LCLVersion = '2.2.2.0'
+  object Memo1: TMemo
+    Left = 8
+    Height = 160
+    Top = 672
+    Width = 752
+    Anchors = [akLeft, akRight, akBottom]
+    OnKeyPress = Memo1KeyPress
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object tb_hostname: TEdit
+    Left = 8
+    Height = 36
+    Top = 632
+    Width = 144
+    Anchors = [akLeft, akBottom]
+    TabOrder = 1
+    Text = '176.53.162.232'
+  end
+  object Edit2: TEdit
+    Left = 160
+    Height = 36
+    Top = 632
+    Width = 144
+    Anchors = [akLeft, akBottom]
+    TabOrder = 2
+    Text = 'root'
+  end
+  object Edit3: TEdit
+    Left = 312
+    Height = 36
+    Top = 632
+    Width = 144
+    Anchors = [akLeft, akBottom]
+    TabOrder = 3
+    Text = 'bbd8JQ9k'
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 464
+    Height = 36
+    Top = 632
+    Width = 88
+    Anchors = [akLeft, akBottom]
+    TabOrder = 4
+    Value = 22
+  end
+  object ListBox1: TListBox
+    Left = 8
+    Height = 224
+    Top = 32
+    Width = 184
+    ItemHeight = 0
+    TabOrder = 5
+    TopIndex = -1
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 19
+    Top = 8
+    Width = 75
+    Caption = 'Server info:'
+    ParentColor = False
+  end
+  object TLC254: TLabel
+    Left = 226
+    Height = 19
+    Top = 341
+    Width = 49
+    Caption = 'TLC254'
+    ParentColor = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 256
+    Top = 40
+  end
+end
