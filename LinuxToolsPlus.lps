@@ -7,10 +7,9 @@
       <Unit>
         <Filename Value="LinuxToolsPlus.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
-        <CursorPos Y="24"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="3" Y="20"/>
         <UsageCount Value="55"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
@@ -19,7 +18,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="55"/>
         <CursorPos X="2" Y="55"/>
         <UsageCount Value="55"/>
         <Loaded Value="True"/>
@@ -37,7 +35,7 @@
         <Filename Value="ssh_client.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="SSH_Client"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="3" Y="14"/>
         <FoldState Value=" T3i9038i"/>
         <UsageCount Value="51"/>
@@ -53,11 +51,10 @@
       </Unit>
       <Unit>
         <Filename Value="../../.lazarus/onlinepackagemanager/packages/synapse40.1/pingsend.pas"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="139"/>
         <CursorPos X="14" Y="148"/>
         <UsageCount Value="13"/>
-        <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
